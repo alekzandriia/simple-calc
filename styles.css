@@ -24,8 +24,9 @@ body {
 
 #output {
   text-align: right;
-  background: none;
+  background: white;
   border: 1px solid black;
+  border-radius: 0.25rem;
   padding: 0.25rem;
   margin-bottom: 0.5rem;
 }
