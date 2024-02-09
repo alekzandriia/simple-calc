@@ -1,0 +1,69 @@
+:root {
+  --button-size: 2.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#calc {
+  border: 1px solid black;
+  width: fit-content;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+#output {
+  text-align: right;
+  background: none;
+  border: 1px solid black;
+  padding: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.symbol {
+  background: darkgrey;
+}
+
+.operator {
+  background: orange;
+  color: white;
+}
+
+.button {
+  width: var(--button-size);
+  height: var(--button-size);
+  border-radius: var(--button-size);
+  border: none;
+  position: relative;
+}
+
+.button:hover::after {
+  content: "";
+  display: block;
+  position: absolute;
+  inset: 0;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  backdrop-filter: brightness(120%);
+}
+
+.wide {
+  width: calc(2 * var(--button-size));
+}
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 0.25rem;
+  margin-block: 0.25rem;
+}

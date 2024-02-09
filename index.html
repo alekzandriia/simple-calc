@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="calc">
+      <input type="text" id="output" placeholder="0" readonly />
+      <div class="row">
+        <input
+          type="button"
+          value="AC"
+          id="clear"
+          class="button symbol"
+          title="All Clear"
+        />
+        <input
+          type="button"
+          value="+/-"
+          id="sign"
+          class="button symbol"
+          title="Plus / Minus"
+        />
+        <input
+          type="button"
+          value="%"
+          id="percent"
+          class="button symbol"
+          title="Percent"
+        />
+        <input
+          type="button"
+          value="/"
+          id="divide"
+          class="button operator input"
+          title="Divide"
+        />
+      </div>
+      <div class="row">
+        <input type="button" value="7" class="button number input" />
+        <input type="button" value="8" class="button number input" />
+        <input type="button" value="9" class="button number input" />
+        <input
+          type="button"
+          value="*"
+          class="button operator input"
+          title="Multiply"
+        />
+      </div>
+      <div class="row">
+        <input type="button" value="4" class="button number input" />
+        <input type="button" value="5" class="button number input" />
+        <input type="button" value="6" class="button number input" />
+        <input
+          type="button"
+          value="-"
+          class="button operator input"
+          title="Subtract"
+        />
+      </div>
+      <div class="row">
+        <input type="button" value="1" class="button number input" />
+        <input type="button" value="2" class="button number input" />
+        <input type="button" value="3" class="button number input" />
+        <input
+          type="button"
+          value="+"
+          class="button operator input"
+          title="Add"
+        />
+      </div>
+      <div class="row">
+        <input type="button" value="0" class="button number wide input" />
+        <input
+          type="button"
+          value="."
+          class="button number input"
+          title="Decimal"
+        />
+        <input
+          type="button"
+          value="="
+          id="equals"
+          class="button operator"
+          title="Equals"
+        />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
